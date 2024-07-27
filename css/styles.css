@@ -604,8 +604,47 @@ font-weight: 400;
 font-size: 12px;
 line-height: 117%;
 letter-spacing: 0.04em;
-margin-bottom: 8px;
 padding-left: 38px;
 padding-right: 30px;
 background-color: transparent;
+outline: transparent;
+}
+
+.modal-input:focus {
+  border-color: #4D5AE5;
+}
+
+.modal-input:focus + .modal-icon {
+  fill: #4D5AE5;
+}
+
+.modal-field {
+  margin-bottom: 8px;
+}
+
+.modal-field-wrap {
+  position: relative;
+}
+
+.modal-icon {
+  fill: #2E2F42;;
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-comment {
+    width: 100%;
+  border: 1px solid #2E2F42;
+border-radius: 4px;
+height: 120px;
+font-weight: 400;
+font-size: 12px;
+line-height: 117%;
+letter-spacing: 0.04em;
+padding: 8px 16px;
+background-color: transparent;
+outline: transparent;
+resize: none;
 }
