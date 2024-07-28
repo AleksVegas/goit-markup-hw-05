@@ -558,6 +558,8 @@ flex-wrap: wrap;
 fill: #f4f4fd;
 }
 
+/* ---- Modal window ---- */
+
 .backdrop {
   width: 100%;
   height: 100%;
@@ -625,13 +627,13 @@ fill: #f4f4fd;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2E2F42;
-  margin-top: 24px;
+  /*margin-top: 24px;*/
   margin-bottom: 16px;
 }
 
 .modal-input {
   width: 100%;
-  border: 1px solid #2E2F42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   height: 40px;
   font-weight: 400;
@@ -642,6 +644,7 @@ fill: #f4f4fd;
   padding-right: 30px;
   background-color: transparent;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -663,14 +666,19 @@ fill: #f4f4fd;
 .modal-icon {
   fill: #2E2F42;;
   position: absolute;
-  left: 19px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-field-comment {
+  margin-bottom: 16px;
 }
 
 .modal-comment {
   width: 100%;
-  border: 1px solid #2E2F42;
+  border: 1px solid rgba(46, 47, 66, 0.4) 
   border-radius: 4px;
   height: 120px;
   font-weight: 400;
@@ -681,4 +689,48 @@ fill: #f4f4fd;
   background-color: transparent;
   outline: transparent;
   resize: none;
+  color: rgba(46, 47, 66, 0.4);
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment:focus {
+  border-color: #4D5AE5;
+}
+
+.user-name {
+  font-size: 12px;
+  line-height: 1.17;
+   letter-spacing: 0.04em;
+   color: #8e8f99;
+   display: block;
+   margin-bottom: 4px;
+}
+
+.checkbox-container {
+  margin-bottom: 24px;
+}
+
+.checkbox {
+  visually-hidden
+}
+
+.label-checkbox {
+  font-size: 12px;
+  line-height: 1.17; 
+   letter-spacing: 0.04em;
+   color: #8e8f99;
+
+}
+
+.span-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  
 }
