@@ -605,19 +605,17 @@ fill: #f4f4fd;
 .button-modal:hover {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff
 }
 
 .button-modal:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff
 }
 
 .icon-close-modal {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-modal:focus .button-modal:focus + .icon-close-modal {
-  fill: #ffffff
 }
 
 .p-modal {
@@ -678,7 +676,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-comment {
   width: 100%;
-  border: 1px solid rgba(46, 47, 66, 0.4) 
+  border: 1px solid rgba(46, 47, 66, 0.4); 
   border-radius: 4px;
   height: 120px;
   font-weight: 400;
@@ -697,21 +695,21 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: #4D5AE5;
 }
 
-.user-name {
+.user-label {
   font-size: 12px;
   line-height: 1.17;
-   letter-spacing: 0.04em;
-   color: #8e8f99;
-   display: block;
-   margin-bottom: 4px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .checkbox-container {
   margin-bottom: 24px;
 }
 
-.checkbox {
-  visually-hidden
+.checkbox:checked {
+  
 }
 
 .label-checkbox {
@@ -719,7 +717,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.17; 
    letter-spacing: 0.04em;
    color: #8e8f99;
-
+display: flex;
+align-items: center;
+gap: 8px;
 }
 
 .span-checkbox {
@@ -732,5 +732,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
   fill: transparent;
-  
+
 }
+
+.icon-checkbox {
+
+}
+
