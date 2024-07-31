@@ -79,6 +79,7 @@ ol {
   margin-right: 76px;
   padding: 0;
 }
+
 .main-link:hover,
 .main-link:focus {
   color: #404bbf;
@@ -107,6 +108,7 @@ ol {
 
 .link-nav.current {
   position: relative;
+  color: #404bbf;
 }
 
 .link-nav.current::before {
@@ -634,6 +636,16 @@ ol {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* any styles */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -803,6 +815,7 @@ ol {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .link-privacy-policy {
@@ -822,6 +835,8 @@ ol {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
 /* ----------------------- */
